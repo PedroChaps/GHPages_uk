@@ -5,49 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UK Travel Video</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             background: linear-gradient(135deg, blue, red 20%, white 40%, red 60%, white 80%, blue);
-            background-size: cover;
-            text-align: center;
-        }
-        .container {
-            background: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 90%;
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 20px;
         }
         iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            border-radius: 10px;
-        }
-        @media (max-width: 768px) {
-            iframe {
-                height: 50vh;
-            }
-        }
-        @media (min-width: 769px) {
-            iframe {
-                width: 80vw;
-                height: 45vw;
-            }
+            height: 100%;
+            border: none;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <iframe width="1920" height="1080" src="https://www.youtube.com/embed/rbPRQV5fs0Y?si=jKwYQy7_4pX_gXtk?rel=0&autoplay=1&vq=hd1080" allowfullscreen allow='autoplay'></iframe>
-    </div>
+    <iframe src="https://www.youtube.com/embed/rbPRQV5fs0Y?rel=0&autoplay=1&vq=hd2160" 
+            allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
 </body>
 </html>
